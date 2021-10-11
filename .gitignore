@@ -1,0 +1,24 @@
+HELP.md
+.mvn
+!.mvn/wrapper/maven-wrapper.properties
+
+target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+### VS Code ###
+vscode/
