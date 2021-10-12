@@ -26,8 +26,10 @@ public class Clientes implements IClientes {
 
     @Override
     public ResponseEntity<String> kpiClients() {
+        if (clientes.isEmpty()){
+            return ResponseEntity.ok("No hay clientes cargados");
+        }
         int n = clientes.size();
-
         // Average calculation
         Integer partialSum = clientes.stream()
                 .map(c -> c.getEdad())
